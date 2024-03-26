@@ -537,10 +537,10 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close">
-          <svg class="modai-close-btn" width="8" height="8">
+          <svg class="modal-close-btn" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -585,15 +585,13 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
+          <div class="modal-field-comment">
             <label for="user-comment" class="modal-label">Comment</label>
-            <div class="modal-input-wrap">
-              <textarea
-                class="modal-text"
-                name="user-comment"
-                id="user-comment"
-                placeholder="Text input"></textarea>
-            </div>
+            <textarea
+              class="modal-text"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"></textarea>
             <div class="modal-field">
               <input
                 type="checkbox"
@@ -601,16 +599,24 @@
                 required
                 id="privacy"
                 class="modal-check visually-hidden" />
-              <label for="privacy" class="check-text">
-                <span>
-                  <svg class="modal-check-icon" width="10" height="8">
-                    <use href="./images/icons.svg#icon-check"></use>
-                  </svg>
-                </span>
-                I accept the terms and conditions of the
-                <a href="" class="check-link"> Privacy Policy</a></label
-              >
             </div>
+          </div>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+              class="check-mark visually-hidden" />
+            <label for="user-privacy" class="check-text">
+              <span class="check-text-span">
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="check-link"> Privacy Policy</a></label
+            >
           </div>
           <button type="submit" class="modal-btn">Send</button>
         </form>
