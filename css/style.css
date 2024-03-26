@@ -503,7 +503,6 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -514,7 +513,6 @@ button {
 }
 .footer-icon-tlgm {
   fill: #fff;
-  bottom: 8px;
   margin-left: 16px;
 }
 .backdrop {
